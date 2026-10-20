@@ -1,0 +1,188 @@
+<!--Menentukan struktur dokumen berupa HTML, bahasa halaman, pengaturan karakter, ukuran tampilan web, dan judul halaman web. -->
+<!DOCTYPE html>
+<html lang="id"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepadatan Penduduk Pulau Jawa Tahun 2026</title>
+    
+
+    <style>
+    /* Mengatur posisi logo di sebelah kiri atas dan memberikan jarak di bawah sebesar 10 piksel. */ 
+      .logo-container {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+    /* Mengatur ukuran logo sebesar 60 × 60 piksel. */
+        .logo-container img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+    
+
+    /* Script ini mengatur jenis font, jarak tepi, warna latar belakang, dan warna teks pada halaman web */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+    /* Membuat judul utama berada di tengah halaman web dan memberikan warna ke judul utama. */
+        h1 {
+            text-align: center;
+            color: #f02f86;
+        }
+    
+    /* Mengatur paragraf pengantar agar berada ditengah bawah judul, dan memiliki jarak bawah sebesar 20 piksel. */
+        p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+    /* Mengatur ukuran, posisi, warna latar belakang, garis, bayangan, dan sudut tabel di tengah halaman. */
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+    /* Script ini mengatur garis batas, jarak dalam sel, dan perataan teks pada judul maupun isi tabel. */
+        th, td {
+            border: 1.5px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+    /* Mengatur warna latar belakang dan warna teks pada kolom judul tabel. */
+        th {
+            background-color: #e789c3;
+            color: white;
+        }
+
+    /* Mengatur warna latar belakang pada baris tabel ketika kursor diarahkan ke baris tersebut. */
+        tr:hover {
+            background-color: #f1f5f9;
+        }
+
+    /* Menyediakan pengaturan perataan teks sesuai dengan kebutuhan setiap sel tabel. */
+        .text-right {
+            text-align: right;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    /* Memberikan warna latar belakang dan teks tebal pada baris total atau ringkasan tabel. */
+        tfoot tr {
+            background-color: #ffe0f3;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<!--Menampilkan logo UGM menggunakan file gambar. -->
+<body>
+<div class="logo-container">
+    <img src="LogoUGM.png" alt="Logo Instansi">
+</div>
+
+    <!--Script ini menampilkan judul utama dan paragraf singkat mengenai informasi kepadatan penduduk. -->
+    <h1>Kepadatan Penduduk Pulau Jawa Tahun 2026</h1>
+    <p>Data estimasi jumlah penduduk dan tingkat kepadatan per provinsi di Pulau Jawa tahun 2026.</p>
+
+    <!-- Script ini membuat tabel dengan enam kolom yang menunjukkan nomor, provinsi, ibu kota, luas wilayah, jumlah penduduk, dan kepadatan penduduk. -->
+    <table border="1" cellspacing="10">
+        <thead>
+            <tr>
+                <th class="text-center">No</th>
+                <th>Provinsi</th>
+                <th>Ibu Kota</th>
+                <th class="text-center">Luas (km²)</th>
+                <th class="text-center">Jumlah Penduduk</th>
+                <th class="text-center">Kepadatan (Jiwa/km²)</th>
+            </tr>
+        </thead>
+
+        <!-- Script ini menampilkan ringkasan nama provinsi, ibu kota, luas wilayah, jumlah penduduk, dan kepadatan pada bagian bawa judul tabel, dengan kolom tiga pertama bagian bawah digabungkan menjadi satu sel.  -->
+        <tbody>
+            <tr>
+                <td class="text-center">1.</td>
+                <td>DKI Jakarta</td>
+                <td>Jakarta</td>
+                <td class="text-right">664,01</td>
+                <td class="text-right">10.669.702</td>
+                <td class="text-right">16.069</td>
+            </tr>
+            <tr>
+                <td class="text-center">2.</td>
+                <td>Jawa Barat</td>
+                <td>Bandung</td>
+                <td class="text-right">35.377,76</td>
+                <td class="text-right">51.163.888</td>
+                <td class="text-right">1.446</td>
+            </tr>
+            <tr>
+                <td class="text-center">3.</td>
+                <td>Jawa Tengah</td>
+                <td>Semarang</td>
+                <td class="text-right">32.800,69</td>
+                <td class="text-right">38.564.968</td>
+                <td class="text-right">1.176</td>
+            </tr>
+            <tr>
+                <td class="text-center">4.</td>
+                <td>Daerah Istimewa Yogyakarta</td>
+                <td>Yogyakarta</td>
+                <td class="text-right">3.133,15</td>
+                <td class="text-right">3.802.716</td>
+                <td class="text-right">1.214</td>
+            </tr>
+            <tr>
+                <td class="text-center">5.</td>
+                <td>Jawa Timur</td>
+                <td>Surabaya</td>
+                <td class="text-right">47.799,75</td>
+                <td class="text-right">42.352.024</td>
+                <td class="text-right">886</td>
+            </tr>
+            <tr>
+                <td class="text-center">6.</td>
+                <td>Banten</td>
+                <td>Serang</td>
+                <td class="text-right">9.662,92</td>
+                <td class="text-right">12.641.299</td>
+                <td class="text-right">1.308</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-center">Total / Rata-Rata</td>
+                <td class="text-right">128.297</td>
+                <td class="text-right">159.194.567</td>
+                <td class="text-right">3.350</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+ <!-- Script ini menampilkan sumber data jumlah penduduk dan keterangan mengenai rumus kepadatan penduduk.  -->   
+<div class="sumber">
+    <p><strong>Sumber:</strong> Badan Pusat Statistik (BPS), data jumlah penduduk dan luas wilayah provinsi di Pulau Jawa tahun 2026.</p>
+    <p><em>Keterangan: Kepadatan penduduk dihitung dari jumlah penduduk dibagi luas wilayah (jiwa/km²).</em></p>
+</div>
+</body>
+</html>
